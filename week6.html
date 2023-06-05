@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-info" href="index.html">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+     <h1 class="text-info">Solar Wind</h1>
+    
+        </div>
+      </nav>
+      
+      <br><br>
+      <div class="container">
+        <h2 class="text-center text-info">Solar Wind: Questions </h2>
+        <p>
+         &nbsp; Read the Solar Winds article by Temple Raston ( and the description of the Cyber Kill Chain
+  model (Hutchins et al, 2011) and carry out the following activities:
+  <ul>
+      <li>Create a table that analyses the solar winds exploit using the Cyber Kill Chain. Are there any
+          phases that you cannot identify?</li>
+      <li>Create a list of possible mitigations for each phase. Are there any phases you cannot mitigate?</li>
+      <li>What tools would you utilise in each phase? Give reasons for your answer.</li>
+  </ul>   
+          <br><br>
+         
+  <div class="container-fluid py-4">
+      <div class="row">
+      <div class="col-12">
+        <div class="card my-4">
+           <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+            <div class="bg-primary shadow-primary border-radius-lg pt-4 pb-3">
+              <h1 class="text-light text-capitalize ps-3">Possible Answers</h6>
+             </div>
+          </div>
+  <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+  <table class="table align-items-center mb-0  table-hover ">
+      <thead>
+          <tr >
+                          
+              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ">Kill chain - Phase</th>
+              <th class="text-uppercase text-secondary  fs-6 font-weight-bolder opacity-7">Kill chain – Phase Description</th>
+              <th class="text-uppercase text-secondary  text-xxs font-weight-bolder opacity-7">Solar wind kill chain mapping</th>
+              <th class="text-uppercase text-secondary  text-xxs font-weight-bolder opacity-7">Solar wind mitigation</th>
+              <th class="text-uppercase text-secondary  text-xxs font-weight-bolder opacity-7">Proposed tools</th>
+  
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Reconnaissance</td>
+              <td>Research, identification, 
+                  Selection of targets
+                  </td>
+              <td>The hackers monitored and did research on the company, Solar winds, and its
+                 customers to determine which organizations would be valuable targets for their attack.</td>
+                 <td> One way to mitigate against reconnaissance is to implement strong perimeter defenses and to limit the information that
+                   is publicly available about your organization's assets and employees. This could include limiting the information that is posted 
+                   on your organization's website, as well as implementing measures such as firewalls and intrusion detection systems to prevent
+                   unauthorized access.</td>
+                  <td>
+                    <ul>
+                        <li>Email monitoring tools</li>
+                        <li>firewalls</li>
+                        <li>intrusion detection system</li>
+                    </ul> </td>
+                  
+          </tr>
+  
+          <tr>
+              <td>Weaponization</td>
+                          <td>In this stage all of the attacker’s preparatory work culminates in the creation of malware to be used
+                   against an Identified target</td>
+              <td>The attackers created a malicious update for the SolarWinds Orion software, which was then distributed to
+                   SolarWinds customers through the company's update mechanism.</td>
+                   <td>it is important to implement secure development practices and to verify the authenticity of any software updates before installing them.
+                       This could include signing software updates with a digital certificate and verifying the signature before installation.</td>
+                   <td><ul><li>toos that scan software updates before installation</li></ul></td>
+                  
+  
+          </tr>
+          <tr>
+              <td>Delivery</td>
+              <td>The means of attack is delivered in this stage</td>
+              <td>The malicious update was delivered to SolarWinds customers and installed on their systems, through
+                  Orion software update.</td>
+              <td>To mitigate against delivery, it is important to implement strong spam and email filtering to prevent malicious emails from reaching their intended targets.
+                   It is also important to keep all systems and software up to date with the latest security patches.</td>
+              <td><ul>
+                <li>Email filtering</li>
+                <li>software Scanner</li>
+              </ul></td>
+          </tr>
+  
+          <tr>
+              <td>Exploitation</td>
+              <td>Attacker takes advantages of found vulnerabilities</td>
+              <td>The update contained a backdoor that allowed the attackers to gain access to the affected systems.</td>
+              <td> it is important to implement strong perimeter defenses and to ensure that all systems and software are kept up to date with the latest security patches. It is also
+                   important to implement defense in depth by using multiple layers of security controls to prevent an attacker from moving laterally within </td>
+              <td><ul><li>Multi-layer seccurity control</li></ul></td>
+          </tr>
+          <tr>
+              <td>installation</td>
+              <td>Installation of the malware or cyberweapon is carried out in this stage</td>
+              <td>The attackers installed additional malware on the affected systems, including a tool called SUNBURST, 
+                  which allowed them to maintain a presence on the system and move laterally within the victim's network.</td>
+              <td>To mitigate against the installation of malware, it is important to implement strong access controls to prevent unauthorized users from gaining access to your systems.
+                   It is also important to monitor your systems for any unusual activity, and to have a plan in place for responding to a breach.</td>
+              <td><ul><li>Auditing tools</li></ul></td>
+          </tr>
+          <tr>
+              <td>Command and control</td>
+              <td>The attacker communicates with the malware</td>
+              <td>The attackers established a command and control infrastructure to communicate with the SUNBURST malware and give it instructions.</td>
+              <td>To mitigate against the establishment of a command and control infrastructure, it is important to implement strong perimeter defenses and to monitor your network for any unusual 
+                  traffic patterns. It is also important to implement endpoint security measures to prevent malware from communicating with external servers.</td>
+                  <td><ul><li>Auditing tools</li></ul></td>
+          </tr>
+          <tr>
+              <td>Action on objective</td>
+              <td>The main purpose of the attack is carried out</td>
+              <td>The attackers used their access to the affected systems to gather information and exfiltrate data. It is not yet clear what their 
+                  ultimate objectives were, but it is suspected that they were gathering intelligence for a nation-state.</td>
+              <td>To mitigate against actions on objectives, it is important to implement strong access controls and to monitor your systems for any unusual activity. It is also important to have 
+                  a plan in place for responding to a breach, including procedures for isolating affected systems and restoring them from known good backups.</td>
+                  <td><ul>
+                    <li>Auditing tools</li>
+                <li>Storage devices for backup </li>
+                </ul></td>
+           </tr>
+      </tbody>
+  
+  </table>
+              </div>
+  </div>
+  </div>
+      </div>
+    <h1 class="text-center">My Reflection</h1>
+    &nbsp;Overall, the SolarWinds exploit was a sophisticated and well-planned attack that took advantage of a supply chain vulnerability
+     to gain access to a large number of organizations. The attackers demonstrated a high level of knowledge
+     and expertise in the cyber domain, and the attack is still being investigated and understood by the cybersecurity community.    
+      </div>
+     
+      
