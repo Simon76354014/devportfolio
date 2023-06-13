@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <title>Document</title>
+    
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-info" href="index.html">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+            <h1 class="text-info">OWASP TOP 10</h1>
     
+        </div>
+      </nav>
+      <h1 class="text-center">OWASP Top 10 Vulnerabilities 2023</h1>
+     
+      <div class="container">
+        <img src="images/TOP_10_logo_Final_Logo_Colour.png" width="500" alt="">
+       <h3> <ol>
+        <li>Injection</li><br>
+        <li>Insecure design</li><br>
+        <li>Cryptographic failures</li><br>
+        <li>Broken access control</li><br>
+        <li>Vulnerable and outdated components</li><br>
+        <li>Identification and authentication failures</li><br>
+        <li>Software and data integrity failures</li><br>
+        <li>Server-side request forgery</li><br>
+        <li>Security misconfiguration</li><br>
+        <li>Security logging and monitoring failures</li><br>
+    </ol></h3>
+
+    <h1>Tips to protect your application</h1><br><br>
+  <ol>
+    <li>
+        Security scanning
+        As the foundation of any security solution, vulnerability scanning provides much-needed oversight. This is a first line of defense,
+        as it reveals where key vulnerabilities exist and whether any urgent threats need to be addressed.
+        
+    </li><br><br>
+    <li> <h4>Encryption</h4> 
+        The need for strong encryption cannot be overstated. After all, the latest version of the OWASP Top 10 includes a revised category 
+        focused exclusively on cryptographic failures. SSL certificates remain the standard for producing encrypted links between clients
+         and servers.</li><br><br>
+    <li><h4>Log files</h4> 
+        OWASP cites security logging as one of the most impactful strategies for verifying current security and boosting protection moving 
+        forward. Logging is available for everything from network devices and web servers to database servers and even custom application
+         events. These logs are especially valuable for identifying and monitoring security incidents and policy violations.</li><br><br>
+    <li><h4>Authorization</h4> 
+        Defined by the National Institute of Standards and Technology (NIST) as "the process of verifying that a requested action or service is 
+        approved for a specific entity," authorization should not be confused with authentication. The former simply reveals whether users have
+         access rights. The aforementioned principle of least privilege applies here, but a deny-by-default mentality must also be implemented.
+          Simply put, this means that all traffic that's not explicitly permitted must be denied.</li><br><br>
+    <li><h4>Authentication</h4> 
+        Confirming that all individuals or entities are, in fact, who they claim to be, authentication processes verify identity and, ideally,
+         will ensure that the most problematic parties are denied access. User IDs and passwords are the core components of modern 
+         authentication. OWASP also recommends Transport Layer Security (TLS) for login pages, as well as re-authentication to prevent
+          session hijacking or cross-site request forgery.</li>
+  </ol> 
+    
+
+  <h1>Reflections:</h1>
+  The material is a helpful overview of the top 10 OWASP vulnerabilities, highlighting typical security problems and providing helpful
+   advice for reducing them. Developers and website owners 
+  who wish to improve the security of their online applications and defend against potential assaults can use it as a starting point. <br><br>
+
+
+
+
+
+        </div>
 </body>
 </html>
